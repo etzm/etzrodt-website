@@ -293,7 +293,7 @@ ul {
 
 /* ===== Hero ===== */
 .hero {
-    padding: 160px 0 100px;
+    padding: 140px 0 40px;
     text-align: center;
 }
 
@@ -307,7 +307,7 @@ ul {
 .hero-tagline {
     font-size: 1.25rem;
     color: var(--color-text-light);
-    margin-bottom: 32px;
+    margin-bottom: 0;
 }
 
 .hero-cta {
@@ -366,6 +366,10 @@ ul {
 }
 
 /* ===== About ===== */
+#about {
+    padding-top: 32px;
+}
+
 .about-content {
     display: flex;
     gap: 48px;
