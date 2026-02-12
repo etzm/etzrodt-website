@@ -704,9 +704,9 @@ ul {
 
 .footer-social {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-end;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
     flex-shrink: 0;
 }
 
