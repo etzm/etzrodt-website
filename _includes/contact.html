@@ -2,9 +2,11 @@
     <div class="container">
         <h2 class="section-title">Contact</h2>
         <p class="contact-text">{{ site.contact.text }}</p>
-        <div class="contact-links">
+        <div class="contact-icons">
             {% for link in site.data.social %}
-            <a href="{{ link.url }}" class="{{ link.class }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            <a href="{{ link.url }}" class="contact-icon" target="_blank" rel="noopener" title="{{ link.label }}">
+                <i class="{{ link.icon }}"></i>
+            </a>
             {% endfor %}
         </div>
     </div>

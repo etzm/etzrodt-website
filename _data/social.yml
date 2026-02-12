@@ -1,15 +1,19 @@
 - label: "LinkedIn"
   url: "https://www.linkedin.com/in/martinetzrodt/"
-  class: "btn btn-primary"
+  icon: "fa-brands fa-linkedin-in"
 
 - label: "GitHub"
   url: "https://github.com/etzm"
-  class: "contact-social"
+  icon: "fa-brands fa-github"
 
 - label: "Google Scholar"
   url: "https://scholar.google.com/citations?hl=en&user=2eDqXAQAAAAJ"
-  class: "contact-social"
+  icon: "fa-solid fa-graduation-cap"
 
 - label: "ORCID"
   url: "https://orcid.org/0000-0003-1928-3904"
-  class: "contact-social"
+  icon: "fa-brands fa-orcid"
+
+- label: "Instagram"
+  url: "https://www.instagram.com/etzromar"
+  icon: "fa-brands fa-instagram"

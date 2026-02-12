@@ -1,5 +1,26 @@
 <footer class="footer">
     <div class="container">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">{{ site.title }}</a>
+                <p class="footer-tagline">{{ site.author.tagline }}</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-social">
+                {% for link in site.data.social %}
+                <a href="{{ link.url }}" class="footer-social-icon" target="_blank" rel="noopener" title="{{ link.label }}">
+                    <i class="{{ link.icon }}"></i>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        </div>
     </div>
 </footer>
