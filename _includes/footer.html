@@ -1,9 +1,16 @@
-<footer class="footer" id="contact">
+<footer class="footer">
     <div class="container">
-        <div class="footer-top">
-            <div class="footer-contact">
-                <h2 class="footer-heading">Get in Touch</h2>
-                <p class="footer-contact-text">{{ site.contact.text }}</p>
+        <div class="footer-main">
+            <div class="footer-left">
+                <a href="{{ '/' | relative_url }}#hero" class="footer-logo">{{ site.title }}</a>
+                <p class="footer-tagline">{{ site.author.tagline }}</p>
+                <div class="footer-nav">
+                    <a href="{{ '/' | relative_url }}#about" class="footer-link">About</a>
+                    <a href="{{ '/' | relative_url }}#experience" class="footer-link">Experience</a>
+                    <a href="{{ '/publications/' | relative_url }}" class="footer-link">Publications</a>
+                    <a href="{{ '/' | relative_url }}#projects" class="footer-link">Projects</a>
+                    <a href="{{ '/' | relative_url }}#skills" class="footer-link">Skills</a>
+                </div>
             </div>
             <div class="footer-social">
                 {% for link in site.data.social %}
@@ -11,19 +18,6 @@
                     <i class="{{ link.icon }}"></i>
                 </a>
                 {% endfor %}
-            </div>
-        </div>
-        <div class="footer-middle">
-            <div class="footer-brand">
-                <a href="{{ '/' | relative_url }}#hero" class="footer-logo">{{ site.title }}</a>
-                <p class="footer-tagline">{{ site.author.tagline }}</p>
-            </div>
-            <div class="footer-nav">
-                <a href="{{ '/' | relative_url }}#about" class="footer-link">About</a>
-                <a href="{{ '/' | relative_url }}#experience" class="footer-link">Experience</a>
-                <a href="{{ '/publications/' | relative_url }}" class="footer-link">Publications</a>
-                <a href="{{ '/' | relative_url }}#projects" class="footer-link">Projects</a>
-                <a href="{{ '/' | relative_url }}#skills" class="footer-link">Skills</a>
             </div>
         </div>
         <div class="footer-bottom">
