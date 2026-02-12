@@ -1,0 +1,32 @@
+- name: "Research Domains"
+  items:
+    - "Stem Cell Biology"
+    - "Immunology"
+    - "Single-Cell Analysis"
+    - "Microfluidics"
+    - "Systems Biology"
+    - "Cancer Immunology"
+
+- name: "Web3 &amp; Governance"
+  items:
+    - "Blockchain"
+    - "Ethereum"
+    - "Solidity"
+    - "DeSci"
+    - "DAOs"
+    - "Science Policy"
+
+- name: "Programming &amp; Tools"
+  items:
+    - "R"
+    - "Matlab"
+    - "ImageJ / Fiji"
+    - "Git"
+    - "LaTeX"
+
+- name: "Languages"
+  items:
+    - "German (native)"
+    - "English (fluent)"
+    - "French (basic)"
+    - "Spanish (basic)"

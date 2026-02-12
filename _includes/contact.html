@@ -1,0 +1,11 @@
+<section class="section section-alt" id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-text">{{ site.contact.text }}</p>
+        <div class="contact-links">
+            {% for link in site.data.social %}
+            <a href="{{ link.url }}" class="{{ link.class }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

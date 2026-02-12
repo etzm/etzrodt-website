@@ -1,0 +1,34 @@
+- title: "Blockchain for Science"
+  description: "A think-tank exploring how blockchain and Web3 technologies can address the reproducibility crisis and improve scientific communication, collaboration, and incentive structures."
+  tags:
+    - "Blockchain"
+    - "Open Science"
+    - "Web3"
+  url: "http://www.blockchainforscience.com"
+  link_text: "Visit Site"
+
+- title: "Decentralized Science (DeSci)"
+  description: "Helped coin the term and co-authored foundational publications on decentralizing science through distributed organisations and blockchain-enabled frameworks for collaborative research."
+  tags:
+    - "DeSci"
+    - "Governance"
+    - "DAOs"
+  url: "https://elephantinthelab.org/decentralizing-science/"
+  link_text: "Read Article"
+
+- title: "Jugend forscht &mdash; First Prize"
+  description: "Won first prize at the German national young researcher contest and the European Union Contest for Young Scientists in Vienna for research on slime moulds as bioassays."
+  tags:
+    - "Biology"
+    - "Award"
+    - "EU Contest"
+  url: "https://www.jugend-forscht.de/projektdatenbank/schleimpilze-als-biotest.html"
+  link_text: "View Project"
+
+- title: "Kinderabenteuerhof Freiburg"
+  description: "Serving as Vorstand (board member) of this community initiative providing adventure-based outdoor experiences for children in Freiburg."
+  tags:
+    - "Community"
+    - "Volunteering"
+  url: "https://kinderabenteuerhof.de/ueber-uns/"
+  link_text: "Learn More"

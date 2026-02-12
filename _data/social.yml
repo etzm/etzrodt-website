@@ -1,0 +1,15 @@
+- label: "LinkedIn"
+  url: "https://www.linkedin.com/in/martinetzrodt/"
+  class: "btn btn-primary"
+
+- label: "GitHub"
+  url: "https://github.com/etzm"
+  class: "contact-social"
+
+- label: "Google Scholar"
+  url: "https://scholar.google.com/citations?hl=en&user=2eDqXAQAAAAJ"
+  class: "contact-social"
+
+- label: "ORCID"
+  url: "https://orcid.org/0000-0003-1928-3904"
+  class: "contact-social"

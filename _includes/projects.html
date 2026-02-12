@@ -1,0 +1,19 @@
+<section class="section section-alt" id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects &amp; Initiatives</h2>
+        <div class="projects-grid">
+            {% for project in site.data.projects %}
+            <div class="card">
+                <h3 class="card-title">{{ project.title }}</h3>
+                <p class="card-description">{{ project.description }}</p>
+                <div class="card-tags">
+                    {% for tag in project.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                <a href="{{ project.url }}" class="card-link" target="_blank" rel="noopener">{{ project.link_text }} &rarr;</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

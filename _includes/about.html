@@ -1,0 +1,15 @@
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="{{ site.about.photo | relative_url }}" alt="{{ site.author.name }}" class="photo-img">
+            </div>
+            <div class="about-text">
+                {% for paragraph in site.about.paragraphs %}
+                <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

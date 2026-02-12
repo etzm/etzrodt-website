@@ -1,0 +1,10 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+.DS_Store
+*.swp
+.claude/
+Materials/
+Information about Martin.rtf

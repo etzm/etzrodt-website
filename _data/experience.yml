@@ -1,0 +1,55 @@
+- date: "2025 &mdash; Present"
+  title: "Board Director"
+  company: "ISCC Foundation"
+  details:
+    - "Member of the foundation board, serving as director"
+
+- date: "2018 &mdash; Present"
+  title: "Principal Researcher"
+  company: "AKASHA Foundation, Zug, Switzerland"
+  details:
+    - "Working with the co-founder of the Ethereum blockchain on Web3.0 technologies"
+    - "Developing economic models for scientific communication, attribution and funding"
+    - "Spearheading the Blockchain for Science initiative"
+
+- date: "2018"
+  title: "Head of Research"
+  company: "Validity Labs AG, Zug, Switzerland"
+  details:
+    - "Led research efforts at a blockchain technology company"
+
+- date: "2013 &mdash; 2018"
+  title: "Postdoctoral Fellow"
+  company: "ETH Z&uuml;rich, Dept. of Biosystems Science &amp; Engineering"
+  details:
+    - "Identified TNF as a key cytokine regulating the transcription factor PU.1 in hematopoietic stem cells"
+    - "Set up laboratory microfluidics efforts and developed single-cell cytokine-challenging devices"
+    - "Supervised 2 master's theses, 4 rotation students, and mentored 3 PhD students"
+    - "Awarded ETH Career Seed Grant (CHF 50,000)"
+    - "EMBO Long-Term Postdoctoral Fellowship Program (2012&ndash;2015)"
+
+- date: "2012 &mdash; 2013"
+  title: "Postdoctoral Fellow"
+  company: "Helmholtz Zentrum M&uuml;nchen, Institute for Stem Cell Research"
+  details:
+    - "Stem Cell Dynamics Research Unit with Dr. Timm Schroeder"
+
+- date: "2008 &mdash; 2012"
+  title: "PhD &mdash; Cancer and Immunology"
+  company: "Harvard Medical School / MGH &amp; Universit&eacute; de Lausanne"
+  details:
+    - "Thesis: Endogenous and exogenous regulation of monocyte responses"
+    - "Published in <em>Science</em>, <em>Nature</em>, <em>Cell Reports</em>, <em>PNAS</em>, and more"
+    - "Awarded AACR Centennial Fellowship ($90,000) and Boehringer Ingelheim Fonds Fellowship"
+
+- date: "2005 &mdash; 2007"
+  title: "M.Sc. Molecular &amp; Cellular Biology"
+  company: "Ruprecht-Karls-Universit&auml;t Heidelberg &amp; EMBL"
+  details:
+    - "Research on microtubule dynamics at the European Molecular Biology Laboratory"
+
+- date: "2002 &mdash; 2005"
+  title: "B.Sc. Chemistry &amp; Biochemistry"
+  company: "Ludwig-Maximilians-Universit&auml;t M&uuml;nchen"
+  details:
+    - "Research at the Max-Planck-Institut for Biochemistry on actin cytoskeleton dynamics"
