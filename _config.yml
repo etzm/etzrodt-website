@@ -20,6 +20,12 @@ about:
 contact:
   text: "Interested in decentralized science, Web3 for research, or collaboration? Let's connect."
 
+# Google Scholar metrics (update manually)
+scholar:
+  citations: "8063"
+  h_index: "24"
+  i10_index: "30"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
