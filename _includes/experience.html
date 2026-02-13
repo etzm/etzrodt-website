@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
-            {% for item in site.data.experience limit:3 %}
+            {% for item in site.data.experience limit:1 %}
             <div class="timeline-item">
                 <div class="timeline-date">{{ item.date }}</div>
                 <div class="timeline-content">
@@ -20,7 +20,7 @@
             {% endfor %}
         </div>
         <div class="section-more">
-            <a href="{{ '/experience/' | relative_url }}" class="btn btn-outline">More &rarr;</a>
+            <a href="{{ '/experience/' | relative_url }}" class="link-more">More &rarr;</a>
         </div>
     </div>
 </section>

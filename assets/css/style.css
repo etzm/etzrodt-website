@@ -371,6 +371,17 @@ ul {
     margin-top: 32px;
 }
 
+.link-more {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.link-more:hover {
+    color: var(--color-accent);
+}
+
 /* ===== About ===== */
 #about {
     padding-top: 32px;
