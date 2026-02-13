@@ -75,24 +75,42 @@ const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 const root = document.documentElement;
 
-function setTheme(theme) {
+function setTheme(theme, persist) {
     root.setAttribute('data-theme', theme);
     // ☾ moon for light mode (click to go dark), ☀ sun for dark mode (click to go light)
     themeIcon.innerHTML = theme === 'dark' ? '&#9788;' : '&#9790;';
-    localStorage.setItem('theme', theme);
+    if (persist) {
+        localStorage.setItem('theme', theme);
+    }
 }
 
 // Load saved preference or respect system preference
-const saved = localStorage.getItem('theme');
-if (saved) {
-    setTheme(saved);
-} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    setTheme('dark');
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    setTheme(savedTheme, false);
+} else {
+    setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light', false);
 }
+
+// Listen for live OS theme changes (only when user hasn't manually chosen)
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+        setTheme(e.matches ? 'dark' : 'light', false);
+    }
+});
 
 themeToggle.addEventListener('click', () => {
     const current = root.getAttribute('data-theme');
-    setTheme(current === 'dark' ? 'light' : 'dark');
+    const next = current === 'dark' ? 'light' : 'dark';
+    const systemPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    if (next === systemPref) {
+        // Matches system preference — clear override so future visits follow OS setting
+        localStorage.removeItem('theme');
+        setTheme(next, false);
+    } else {
+        // Differs from system — persist user's choice
+        setTheme(next, true);
+    }
 });
 
 // Language toggle for legal pages
