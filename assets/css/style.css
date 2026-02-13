@@ -366,6 +366,11 @@ ul {
     text-align: center;
 }
 
+.section-more {
+    text-align: center;
+    margin-top: 32px;
+}
+
 /* ===== About ===== */
 #about {
     padding-top: 32px;

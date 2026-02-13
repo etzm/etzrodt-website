@@ -1,8 +1,14 @@
-<section class="section section-alt" id="experience">
+---
+layout: default
+title: Experience
+permalink: /experience/
+---
+
+<section class="section" id="experience-page">
     <div class="container">
-        <h2 class="section-title">Experience</h2>
+        <h1 class="section-title">Experience</h1>
         <div class="timeline">
-            {% for item in site.data.experience limit:3 %}
+            {% for item in site.data.experience %}
             <div class="timeline-item">
                 <div class="timeline-date">{{ item.date }}</div>
                 <div class="timeline-content">
@@ -18,9 +24,6 @@
                 </div>
             </div>
             {% endfor %}
-        </div>
-        <div class="section-more">
-            <a href="{{ '/experience/' | relative_url }}" class="btn btn-outline">More &rarr;</a>
         </div>
     </div>
 </section>
