@@ -1,0 +1,192 @@
+---
+layout: default
+title: Impressum
+permalink: /impressum/
+---
+
+<section class="section legal-page" id="impressum">
+    <div class="container legal-container">
+        <h1 class="section-title">Impressum</h1>
+
+        <p class="legal-subtitle">Angaben gemäß § 5 DDG</p>
+
+        <div class="legal-block">
+            <h2 class="legal-heading">Verantwortlich</h2>
+            <p>
+                Dr. Martin Etzrodt<br>
+                c/o Kinderabenteuerhof Freiburg e.V.<br>
+                Alfred-Döblin-Platz 1<br>
+                79100 Freiburg, Germany
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading">Kontakt</h2>
+            <p>
+                E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading">Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV</h2>
+            <p>
+                Dr. Martin Etzrodt<br>
+                Anschrift wie oben
+            </p>
+        </div>
+
+        <div class="legal-block">
+            <h2 class="legal-heading">Haftungsausschluss</h2>
+
+            <h3 class="legal-subheading">Haftung für Inhalte</h3>
+            <p>
+                Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, 
+                Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. 
+                Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten 
+                nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als 
+                Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde 
+                Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige 
+                Tätigkeit hinweisen.
+            </p>
+
+            <h3 class="legal-subheading">Haftung für Links</h3>
+            <p>
+                Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen 
+                Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. 
+                Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber 
+                der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf 
+                mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der 
+                Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten 
+                ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei 
+                Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+            </p>
+
+            <h3 class="legal-subheading">Urheberrecht</h3>
+            <p>
+                Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
+                dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art 
+                der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen 
+                Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind 
+                nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="legal-block" id="contact">
+            <h2 class="legal-heading">Kontaktformular</h2>
+            <p class="legal-form-intro">
+                Sie können mich auch über das folgende Formular kontaktieren. 
+                Ihre Nachricht wird per E-Mail an mich weitergeleitet.
+            </p>
+
+            <form
+                class="contact-form"
+                id="contact-form"
+            >
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input
+                        class="form-input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="name"
+                        placeholder="Ihr Name"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">E-Mail</label>
+                    <input
+                        class="form-input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        placeholder="ihre@email.de"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="subject">Betreff</label>
+                    <input
+                        class="form-input"
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Worum geht es?"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="message">Nachricht</label>
+                    <textarea
+                        class="form-input form-textarea"
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        placeholder="Ihre Nachricht..."
+                    ></textarea>
+                </div>
+
+                <!-- Honeypot spam protection -->
+                <input type="text" name="_gotcha" style="display:none">
+
+                <p id="form-error" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
+
+                <button class="btn btn-primary form-submit" type="submit">
+                    Nachricht senden
+                </button>
+            </form>
+
+            <div id="form-success" style="display: none;">
+                <p style="color: var(--color-text); font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Vielen Dank!</p>
+                <p>Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich.</p>
+            </div>
+
+            <script>
+            (function () {
+                var WORKER_URL = "https://contact-form.etzrodt-martin.workers.dev";
+                var form = document.getElementById("contact-form");
+                var errorEl = document.getElementById("form-error");
+                var successEl = document.getElementById("form-success");
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    errorEl.style.display = "none";
+                    var btn = form.querySelector("button[type=submit]");
+                    btn.disabled = true;
+                    btn.textContent = "Wird gesendet\u2026";
+
+                    fetch(WORKER_URL, {
+                        method: "POST",
+                        body: new FormData(form),
+                    })
+                        .then(function (res) { return res.json(); })
+                        .then(function (data) {
+                            if (data.success) {
+                                form.style.display = "none";
+                                successEl.style.display = "block";
+                            } else {
+                                errorEl.textContent = data.error || "Ein Fehler ist aufgetreten.";
+                                errorEl.style.display = "block";
+                                btn.disabled = false;
+                                btn.textContent = "Nachricht senden";
+                            }
+                        })
+                        .catch(function () {
+                            errorEl.textContent = "Verbindungsfehler. Bitte versuchen Sie es später.";
+                            errorEl.style.display = "block";
+                            btn.disabled = false;
+                            btn.textContent = "Nachricht senden";
+                        });
+                });
+            })();
+            </script>
+        </div>
+
+    </div>
+</section>

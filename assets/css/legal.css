@@ -1,0 +1,168 @@
+/* ===== Legal Pages (Impressum, Datenschutz) ===== */
+.legal-container {
+    max-width: 740px;
+}
+
+.legal-subtitle {
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+    letter-spacing: 0.05em;
+    margin-bottom: 48px;
+}
+
+.legal-block {
+    margin-bottom: 40px;
+}
+
+.legal-heading {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+    line-height: 1.3;
+}
+
+.legal-subheading {
+    font-family: var(--font-stack);
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.legal-page p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.legal-page a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.legal-page a:hover {
+    color: var(--color-accent-hover);
+}
+
+.legal-page ul {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    padding-left: 8px;
+}
+
+.legal-page li {
+    margin-bottom: 6px;
+}
+
+.legal-form-intro {
+    margin-bottom: 28px;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+    margin-top: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: var(--font-stack);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-text-light);
+    opacity: 0.5;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+[data-theme="dark"] .form-input:focus {
+    box-shadow: 0 0 0 3px rgba(91, 156, 246, 0.15);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+.form-submit {
+    margin-top: 8px;
+    border: none;
+    font-family: var(--font-stack);
+    letter-spacing: 0.02em;
+}
+
+/* ===== Footer Legal Links ===== */
+.footer-legal {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.footer-legal-link {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: var(--color-text-light);
+    opacity: 0.7;
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.footer-legal-link:hover {
+    opacity: 1;
+    color: var(--color-accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .legal-container {
+        max-width: 100%;
+    }
+
+    .legal-heading {
+        font-size: 1.15rem;
+    }
+}
