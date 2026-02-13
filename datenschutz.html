@@ -8,222 +8,455 @@ permalink: /datenschutz/
     <div class="container legal-container">
         <h1 class="section-title">Datenschutzerklärung</h1>
 
-        <p class="legal-subtitle">Stand: Februar 2026</p>
-
-        <!-- 1. Verantwortlicher -->
-        <div class="legal-block">
-            <h2 class="legal-heading">1. Verantwortlicher</h2>
-            <p>
-                Dr. Martin Etzrodt<br>
-                c/o Kinderabenteuerhof Freiburg e.V.<br>
-                Alfred-Döblin-Platz 1<br>
-                79100 Freiburg, Germany<br>
-                E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
-            </p>
+        <!-- Language Toggle -->
+        <div class="lang-toggle-wrapper">
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span class="lang-option active" data-lang="de">DE</span>
+                <span class="lang-separator">|</span>
+                <span class="lang-option" data-lang="en">EN</span>
+            </button>
         </div>
 
-        <!-- 2. Überblick -->
-        <div class="legal-block">
-            <h2 class="legal-heading">2. Überblick der Datenverarbeitung</h2>
-            <p>
-                Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung
-                personenbezogener Daten auf dieser Website. Personenbezogene Daten sind alle Daten,
-                mit denen Sie persönlich identifiziert werden können.
-            </p>
+        <!-- ==================== GERMAN ==================== -->
+        <div class="legal-content active" data-lang="de">
+
+            <p class="legal-subtitle">Stand: Februar 2026</p>
+
+            <!-- 1. Verantwortlicher -->
+            <div class="legal-block">
+                <h2 class="legal-heading">1. Verantwortlicher</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    c/o Kinderabenteuerhof Freiburg e.V.<br>
+                    Alfred-Döblin-Platz 1<br>
+                    79100 Freiburg, Germany<br>
+                    E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
+
+            <!-- 2. Überblick -->
+            <div class="legal-block">
+                <h2 class="legal-heading">2. Überblick der Datenverarbeitung</h2>
+                <p>
+                    Diese Datenschutzerklärung informiert Sie über Art, Umfang und Zweck der Verarbeitung
+                    personenbezogener Daten auf dieser Website. Personenbezogene Daten sind alle Daten,
+                    mit denen Sie persönlich identifiziert werden können.
+                </p>
+            </div>
+
+            <!-- 3. Hosting -->
+            <div class="legal-block">
+                <h2 class="legal-heading">3. Hosting</h2>
+                <p>
+                    Diese Website wird bei <strong>GitHub Pages</strong> gehostet, einem Dienst der
+                    GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
+                    (Muttergesellschaft: Microsoft Corporation).
+                </p>
+                <p>
+                    Beim Besuch dieser Website werden vom Webserver automatisch folgende Daten erfasst
+                    (sogenannte Server-Logfiles):
+                </p>
+                <ul>
+                    <li>IP-Adresse des anfragenden Geräts</li>
+                    <li>Datum und Uhrzeit des Zugriffs</li>
+                    <li>Aufgerufene Seite / Name der abgerufenen Datei</li>
+                    <li>Übertragene Datenmenge</li>
+                    <li>Browser-Typ und -Version</li>
+                    <li>Betriebssystem</li>
+                    <li>Referrer-URL</li>
+                </ul>
+                <p>
+                    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+                    (berechtigtes Interesse an der sicheren und effizienten Bereitstellung der Website).
+                </p>
+                <p>
+                    GitHub Inc. ist unter dem EU-US Data Privacy Framework zertifiziert, wodurch ein
+                    angemessenes Datenschutzniveau für die Übermittlung personenbezogener Daten in die
+                    USA gewährleistet wird.
+                </p>
+                <p>
+                    Weitere Informationen:
+                    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">
+                        GitHub Privacy Statement
+                    </a>
+                </p>
+            </div>
+
+            <!-- 4. Kontaktformular -->
+            <div class="legal-block">
+                <h2 class="legal-heading">4. Kontaktformular</h2>
+                <p>
+                    Wenn Sie das Kontaktformular auf der <a href="{{ '/impressum/' | relative_url }}#contact">Impressum-Seite</a>
+                    nutzen, werden folgende Daten verarbeitet:
+                </p>
+                <ul>
+                    <li>Name</li>
+                    <li>E-Mail-Adresse</li>
+                    <li>Betreff (optional)</li>
+                    <li>Nachricht</li>
+                </ul>
+                <p>
+                    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
+                    durch aktives Absenden des Formulars. Sie können Ihre Einwilligung jederzeit mit
+                    Wirkung für die Zukunft widerrufen.
+                </p>
+
+                <h3 class="legal-subheading">Cloudflare Workers</h3>
+                <p>
+                    Das Kontaktformular wird über einen <strong>Cloudflare Worker</strong> verarbeitet,
+                    einen serverlosen Dienst der Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
+                    Die Verarbeitung Ihrer Formulardaten erfolgt auf europäischen Cloudflare-Servern.
+                    Cloudflare ist unter dem EU-US Data Privacy Framework zertifiziert.
+                </p>
+                <p>
+                    Weitere Informationen:
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
+                        Cloudflare Privacy Policy
+                    </a>
+                </p>
+
+                <h3 class="legal-subheading">Brevo (E-Mail-Versand)</h3>
+                <p>
+                    Zum Versand der Kontaktformular-Nachrichten wird der Dienst <strong>Brevo</strong>
+                    (ehemals Sendinblue) genutzt. Anbieter ist die Sendinblue GmbH, Köpenicker Str. 126,
+                    10179 Berlin, Deutschland.
+                </p>
+                <p>
+                    Brevo verarbeitet die im Formular eingegebenen Daten (Name, E-Mail-Adresse, Nachricht)
+                    ausschließlich zum Zweck der E-Mail-Zustellung an den Seitenbetreiber. Die Daten werden
+                    auf Servern in der Europäischen Union verarbeitet. Mit Brevo wurde ein
+                    Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen.
+                </p>
+                <p>
+                    Weitere Informationen:
+                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">
+                        Brevo Datenschutzerklärung
+                    </a>
+                </p>
+            </div>
+
+            <!-- 5. Webanalyse -->
+            <div class="legal-block">
+                <h2 class="legal-heading">5. Webanalyse (GoatCounter)</h2>
+                <p>
+                    Diese Website nutzt <strong>GoatCounter</strong>, einen datenschutzfreundlichen
+                    Open-Source-Webanalysedienst. GoatCounter erhebt <strong>keine personenbezogenen Daten</strong>
+                    und setzt <strong>keine Cookies</strong>.
+                </p>
+                <p>
+                    Erfasst werden ausschließlich anonymisierte, aggregierte Daten wie Seitenaufrufe,
+                    Referrer und ungefähre Standortdaten (auf Landesebene). Eine Identifizierung einzelner
+                    Besucher ist nicht möglich.
+                </p>
+                <p>
+                    Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+                    (berechtigtes Interesse an der statistischen Auswertung der Websitenutzung).
+                    Die Server befinden sich in den Niederlanden (EU).
+                </p>
+                <p>
+                    Weitere Informationen:
+                    <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">
+                        GoatCounter Privacy Policy
+                    </a>
+                </p>
+            </div>
+
+            <!-- 6. Externe Links -->
+            <div class="legal-block">
+                <h2 class="legal-heading">6. Externe Links</h2>
+                <p>
+                    Diese Website enthält Links zu externen Webseiten (z.B. LinkedIn, GitHub, Google Scholar,
+                    ORCID, Instagram). Beim Anklicken dieser Links werden Sie auf die jeweilige externe
+                    Plattform weitergeleitet. Dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
+                    Durch das bloße Vorhandensein der Links auf dieser Website werden keine Daten an diese
+                    Dienste übermittelt.
+                </p>
+            </div>
+
+            <!-- 7. Keine Cookies -->
+            <div class="legal-block">
+                <h2 class="legal-heading">7. Cookies</h2>
+                <p>
+                    Diese Website verwendet <strong>keine Cookies</strong>. Es werden weder eigene noch
+                    Cookies von Drittanbietern gesetzt.
+                </p>
+            </div>
+
+            <!-- 8. SSL/TLS -->
+            <div class="legal-block">
+                <h2 class="legal-heading">8. SSL-/TLS-Verschlüsselung</h2>
+                <p>
+                    Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.
+                    Eine verschlüsselte Verbindung erkennen Sie an dem Schloss-Symbol in der Adresszeile
+                    Ihres Browsers und daran, dass die Adresszeile mit „https://" beginnt.
+                </p>
+            </div>
+
+            <!-- 9. Betroffenenrechte -->
+            <div class="legal-block">
+                <h2 class="legal-heading">9. Ihre Rechte</h2>
+                <p>
+                    Sie haben gemäß DSGVO folgende Rechte bezüglich Ihrer personenbezogenen Daten:
+                </p>
+                <ul>
+                    <li><strong>Auskunft</strong> (Art. 15 DSGVO) — Sie können Auskunft über Ihre
+                        verarbeiteten personenbezogenen Daten verlangen.</li>
+                    <li><strong>Berichtigung</strong> (Art. 16 DSGVO) — Sie können die Berichtigung
+                        unrichtiger Daten verlangen.</li>
+                    <li><strong>Löschung</strong> (Art. 17 DSGVO) — Sie können die Löschung Ihrer
+                        Daten verlangen, sofern keine gesetzliche Aufbewahrungspflicht besteht.</li>
+                    <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO) — Sie können
+                        die Einschränkung der Verarbeitung Ihrer Daten verlangen.</li>
+                    <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO) — Sie können verlangen,
+                        dass Ihre Daten in einem maschinenlesbaren Format übermittelt werden.</li>
+                    <li><strong>Widerspruch</strong> (Art. 21 DSGVO) — Sie können der Verarbeitung
+                        Ihrer Daten jederzeit widersprechen.</li>
+                    <li><strong>Widerruf der Einwilligung</strong> (Art. 7 Abs. 3 DSGVO) — Sie können
+                        eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</li>
+                </ul>
+                <p>
+                    Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an:
+                    <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
+
+            <!-- 10. Beschwerderecht -->
+            <div class="legal-block">
+                <h2 class="legal-heading">10. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+                <p>
+                    Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen
+                    die DSGVO verstößt, haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren.
+                    Die für Baden-Württemberg zuständige Aufsichtsbehörde ist:
+                </p>
+                <p>
+                    Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
+                    Lautenschlagerstraße 20<br>
+                    70173 Stuttgart<br>
+                    <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">
+                        www.baden-wuerttemberg.datenschutz.de
+                    </a>
+                </p>
+            </div>
+
         </div>
 
-        <!-- 3. Hosting -->
-        <div class="legal-block">
-            <h2 class="legal-heading">3. Hosting</h2>
-            <p>
-                Diese Website wird bei <strong>GitHub Pages</strong> gehostet, einem Dienst der
-                GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
-                (Muttergesellschaft: Microsoft Corporation).
-            </p>
-            <p>
-                Beim Besuch dieser Website werden vom Webserver automatisch folgende Daten erfasst
-                (sogenannte Server-Logfiles):
-            </p>
-            <ul>
-                <li>IP-Adresse des anfragenden Geräts</li>
-                <li>Datum und Uhrzeit des Zugriffs</li>
-                <li>Aufgerufene Seite / Name der abgerufenen Datei</li>
-                <li>Übertragene Datenmenge</li>
-                <li>Browser-Typ und -Version</li>
-                <li>Betriebssystem</li>
-                <li>Referrer-URL</li>
-            </ul>
-            <p>
-                Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-                (berechtigtes Interesse an der sicheren und effizienten Bereitstellung der Website).
-            </p>
-            <p>
-                GitHub Inc. ist unter dem EU-US Data Privacy Framework zertifiziert, wodurch ein
-                angemessenes Datenschutzniveau für die Übermittlung personenbezogener Daten in die
-                USA gewährleistet wird.
-            </p>
-            <p>
-                Weitere Informationen:
-                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">
-                    GitHub Privacy Statement
-                </a>
-            </p>
-        </div>
+        <!-- ==================== ENGLISH ==================== -->
+        <div class="legal-content" data-lang="en">
 
-        <!-- 4. Kontaktformular -->
-        <div class="legal-block">
-            <h2 class="legal-heading">4. Kontaktformular</h2>
-            <p>
-                Wenn Sie das Kontaktformular auf der <a href="{{ '/impressum/' | relative_url }}#contact">Impressum-Seite</a>
-                nutzen, werden folgende Daten verarbeitet:
-            </p>
-            <ul>
-                <li>Name</li>
-                <li>E-Mail-Adresse</li>
-                <li>Betreff (optional)</li>
-                <li>Nachricht</li>
-            </ul>
-            <p>
-                Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)
-                durch aktives Absenden des Formulars. Sie können Ihre Einwilligung jederzeit mit
-                Wirkung für die Zukunft widerrufen.
-            </p>
+            <p class="legal-subtitle">As of: February 2026</p>
 
-            <h3 class="legal-subheading">Cloudflare Workers</h3>
-            <p>
-                Das Kontaktformular wird über einen <strong>Cloudflare Worker</strong> verarbeitet,
-                einen serverlosen Dienst der Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
-                Die Verarbeitung Ihrer Formulardaten erfolgt auf europäischen Cloudflare-Servern.
-                Cloudflare ist unter dem EU-US Data Privacy Framework zertifiziert.
-            </p>
-            <p>
-                Weitere Informationen:
-                <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
-                    Cloudflare Privacy Policy
-                </a>
-            </p>
+            <!-- 1. Controller -->
+            <div class="legal-block">
+                <h2 class="legal-heading">1. Controller</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    c/o Kinderabenteuerhof Freiburg e.V.<br>
+                    Alfred-Döblin-Platz 1<br>
+                    79100 Freiburg, Germany<br>
+                    Email: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
 
-            <h3 class="legal-subheading">Brevo (E-Mail-Versand)</h3>
-            <p>
-                Zum Versand der Kontaktformular-Nachrichten wird der Dienst <strong>Brevo</strong>
-                (ehemals Sendinblue) genutzt. Anbieter ist die Sendinblue GmbH, Köpenicker Str. 126,
-                10179 Berlin, Deutschland.
-            </p>
-            <p>
-                Brevo verarbeitet die im Formular eingegebenen Daten (Name, E-Mail-Adresse, Nachricht)
-                ausschließlich zum Zweck der E-Mail-Zustellung an den Seitenbetreiber. Die Daten werden
-                auf Servern in der Europäischen Union verarbeitet. Mit Brevo wurde ein
-                Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen.
-            </p>
-            <p>
-                Weitere Informationen:
-                <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">
-                    Brevo Datenschutzerklärung
-                </a>
-            </p>
-        </div>
+            <!-- 2. Overview -->
+            <div class="legal-block">
+                <h2 class="legal-heading">2. Overview of Data Processing</h2>
+                <p>
+                    This privacy policy informs you about the type, scope, and purpose of the processing
+                    of personal data on this website. Personal data is any data that can be used to
+                    personally identify you.
+                </p>
+            </div>
 
-        <!-- 5. Webanalyse -->
-        <div class="legal-block">
-            <h2 class="legal-heading">5. Webanalyse (GoatCounter)</h2>
-            <p>
-                Diese Website nutzt <strong>GoatCounter</strong>, einen datenschutzfreundlichen
-                Open-Source-Webanalysedienst. GoatCounter erhebt <strong>keine personenbezogenen Daten</strong>
-                und setzt <strong>keine Cookies</strong>.
-            </p>
-            <p>
-                Erfasst werden ausschließlich anonymisierte, aggregierte Daten wie Seitenaufrufe,
-                Referrer und ungefähre Standortdaten (auf Landesebene). Eine Identifizierung einzelner
-                Besucher ist nicht möglich.
-            </p>
-            <p>
-                Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-                (berechtigtes Interesse an der statistischen Auswertung der Websitenutzung).
-                Die Server befinden sich in den Niederlanden (EU).
-            </p>
-            <p>
-                Weitere Informationen:
-                <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">
-                    GoatCounter Privacy Policy
-                </a>
-            </p>
-        </div>
+            <!-- 3. Hosting -->
+            <div class="legal-block">
+                <h2 class="legal-heading">3. Hosting</h2>
+                <p>
+                    This website is hosted on <strong>GitHub Pages</strong>, a service provided by
+                    GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA
+                    (parent company: Microsoft Corporation).
+                </p>
+                <p>
+                    When you visit this website, the web server automatically collects the following data
+                    (so-called server log files):
+                </p>
+                <ul>
+                    <li>IP address of the requesting device</li>
+                    <li>Date and time of access</li>
+                    <li>Page visited / name of the retrieved file</li>
+                    <li>Amount of data transferred</li>
+                    <li>Browser type and version</li>
+                    <li>Operating system</li>
+                    <li>Referrer URL</li>
+                </ul>
+                <p>
+                    Processing is carried out on the basis of Art. 6(1)(f) GDPR (legitimate interest in
+                    the secure and efficient provision of the website).
+                </p>
+                <p>
+                    GitHub Inc. is certified under the EU-US Data Privacy Framework, ensuring an adequate
+                    level of data protection for the transfer of personal data to the USA.
+                </p>
+                <p>
+                    Further information:
+                    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">
+                        GitHub Privacy Statement
+                    </a>
+                </p>
+            </div>
 
-        <!-- 6. Externe Links -->
-        <div class="legal-block">
-            <h2 class="legal-heading">6. Externe Links</h2>
-            <p>
-                Diese Website enthält Links zu externen Webseiten (z.B. LinkedIn, GitHub, Google Scholar,
-                ORCID, Instagram). Beim Anklicken dieser Links werden Sie auf die jeweilige externe
-                Plattform weitergeleitet. Dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters.
-                Durch das bloße Vorhandensein der Links auf dieser Website werden keine Daten an diese
-                Dienste übermittelt.
-            </p>
-        </div>
+            <!-- 4. Contact Form -->
+            <div class="legal-block">
+                <h2 class="legal-heading">4. Contact Form</h2>
+                <p>
+                    When you use the contact form on the <a href="{{ '/impressum/' | relative_url }}#contact">Impressum page</a>,
+                    the following data is processed:
+                </p>
+                <ul>
+                    <li>Name</li>
+                    <li>Email address</li>
+                    <li>Subject (optional)</li>
+                    <li>Message</li>
+                </ul>
+                <p>
+                    Processing is carried out on the basis of Art. 6(1)(a) GDPR (consent) through
+                    actively submitting the form. You may withdraw your consent at any time with
+                    effect for the future.
+                </p>
 
-        <!-- 7. Keine Cookies -->
-        <div class="legal-block">
-            <h2 class="legal-heading">7. Cookies</h2>
-            <p>
-                Diese Website verwendet <strong>keine Cookies</strong>. Es werden weder eigene noch
-                Cookies von Drittanbietern gesetzt.
-            </p>
-        </div>
+                <h3 class="legal-subheading">Cloudflare Workers</h3>
+                <p>
+                    The contact form is processed via a <strong>Cloudflare Worker</strong>, a serverless
+                    service provided by Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
+                    Your form data is processed on European Cloudflare servers. Cloudflare is certified
+                    under the EU-US Data Privacy Framework.
+                </p>
+                <p>
+                    Further information:
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
+                        Cloudflare Privacy Policy
+                    </a>
+                </p>
 
-        <!-- 8. SSL/TLS -->
-        <div class="legal-block">
-            <h2 class="legal-heading">8. SSL-/TLS-Verschlüsselung</h2>
-            <p>
-                Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.
-                Eine verschlüsselte Verbindung erkennen Sie an dem Schloss-Symbol in der Adresszeile
-                Ihres Browsers und daran, dass die Adresszeile mit „https://" beginnt.
-            </p>
-        </div>
+                <h3 class="legal-subheading">Brevo (Email Delivery)</h3>
+                <p>
+                    The service <strong>Brevo</strong> (formerly Sendinblue) is used to deliver contact
+                    form messages. The provider is Sendinblue GmbH, Köpenicker Str. 126, 10179 Berlin, Germany.
+                </p>
+                <p>
+                    Brevo processes the data entered in the form (name, email address, message) solely
+                    for the purpose of delivering the email to the site operator. The data is processed
+                    on servers within the European Union. A data processing agreement (DPA) pursuant to
+                    Art. 28 GDPR has been concluded with Brevo.
+                </p>
+                <p>
+                    Further information:
+                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">
+                        Brevo Privacy Policy
+                    </a>
+                </p>
+            </div>
 
-        <!-- 9. Betroffenenrechte -->
-        <div class="legal-block">
-            <h2 class="legal-heading">9. Ihre Rechte</h2>
-            <p>
-                Sie haben gemäß DSGVO folgende Rechte bezüglich Ihrer personenbezogenen Daten:
-            </p>
-            <ul>
-                <li><strong>Auskunft</strong> (Art. 15 DSGVO) — Sie können Auskunft über Ihre
-                    verarbeiteten personenbezogenen Daten verlangen.</li>
-                <li><strong>Berichtigung</strong> (Art. 16 DSGVO) — Sie können die Berichtigung
-                    unrichtiger Daten verlangen.</li>
-                <li><strong>Löschung</strong> (Art. 17 DSGVO) — Sie können die Löschung Ihrer
-                    Daten verlangen, sofern keine gesetzliche Aufbewahrungspflicht besteht.</li>
-                <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO) — Sie können
-                    die Einschränkung der Verarbeitung Ihrer Daten verlangen.</li>
-                <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO) — Sie können verlangen,
-                    dass Ihre Daten in einem maschinenlesbaren Format übermittelt werden.</li>
-                <li><strong>Widerspruch</strong> (Art. 21 DSGVO) — Sie können der Verarbeitung
-                    Ihrer Daten jederzeit widersprechen.</li>
-                <li><strong>Widerruf der Einwilligung</strong> (Art. 7 Abs. 3 DSGVO) — Sie können
-                    eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</li>
-            </ul>
-            <p>
-                Zur Ausübung Ihrer Rechte wenden Sie sich bitte per E-Mail an:
-                <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
-            </p>
-        </div>
+            <!-- 5. Web Analytics -->
+            <div class="legal-block">
+                <h2 class="legal-heading">5. Web Analytics (GoatCounter)</h2>
+                <p>
+                    This website uses <strong>GoatCounter</strong>, a privacy-friendly open-source web
+                    analytics service. GoatCounter collects <strong>no personal data</strong> and sets
+                    <strong>no cookies</strong>.
+                </p>
+                <p>
+                    Only anonymised, aggregated data such as page views, referrers, and approximate
+                    location data (country level) is collected. Identifying individual visitors is
+                    not possible.
+                </p>
+                <p>
+                    Processing is carried out on the basis of Art. 6(1)(f) GDPR (legitimate interest in
+                    statistical analysis of website usage). The servers are located in the Netherlands (EU).
+                </p>
+                <p>
+                    Further information:
+                    <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">
+                        GoatCounter Privacy Policy
+                    </a>
+                </p>
+            </div>
 
-        <!-- 10. Beschwerderecht -->
-        <div class="legal-block">
-            <h2 class="legal-heading">10. Beschwerderecht bei einer Aufsichtsbehörde</h2>
-            <p>
-                Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen
-                die DSGVO verstößt, haben Sie das Recht, sich bei einer Aufsichtsbehörde zu beschweren.
-                Die für Baden-Württemberg zuständige Aufsichtsbehörde ist:
-            </p>
-            <p>
-                Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
-                Lautenschlagerstraße 20<br>
-                70173 Stuttgart<br>
-                <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">
-                    www.baden-wuerttemberg.datenschutz.de
-                </a>
-            </p>
+            <!-- 6. External Links -->
+            <div class="legal-block">
+                <h2 class="legal-heading">6. External Links</h2>
+                <p>
+                    This website contains links to external websites (e.g. LinkedIn, GitHub, Google Scholar,
+                    ORCID, Instagram). When you click on these links, you will be redirected to the respective
+                    external platform. The privacy policies of the respective provider apply there. The mere
+                    presence of links on this website does not transmit any data to these services.
+                </p>
+            </div>
+
+            <!-- 7. Cookies -->
+            <div class="legal-block">
+                <h2 class="legal-heading">7. Cookies</h2>
+                <p>
+                    This website uses <strong>no cookies</strong>. Neither first-party nor third-party
+                    cookies are set.
+                </p>
+            </div>
+
+            <!-- 8. SSL/TLS -->
+            <div class="legal-block">
+                <h2 class="legal-heading">8. SSL/TLS Encryption</h2>
+                <p>
+                    This website uses SSL/TLS encryption for security reasons. You can recognise an
+                    encrypted connection by the lock icon in your browser's address bar and by the
+                    address beginning with "https://".
+                </p>
+            </div>
+
+            <!-- 9. Your Rights -->
+            <div class="legal-block">
+                <h2 class="legal-heading">9. Your Rights</h2>
+                <p>
+                    Under the GDPR, you have the following rights regarding your personal data:
+                </p>
+                <ul>
+                    <li><strong>Access</strong> (Art. 15 GDPR) — You may request information about your
+                        processed personal data.</li>
+                    <li><strong>Rectification</strong> (Art. 16 GDPR) — You may request the correction
+                        of inaccurate data.</li>
+                    <li><strong>Erasure</strong> (Art. 17 GDPR) — You may request the deletion of your
+                        data, provided no legal retention obligation exists.</li>
+                    <li><strong>Restriction of processing</strong> (Art. 18 GDPR) — You may request the
+                        restriction of the processing of your data.</li>
+                    <li><strong>Data portability</strong> (Art. 20 GDPR) — You may request that your data
+                        be provided in a machine-readable format.</li>
+                    <li><strong>Objection</strong> (Art. 21 GDPR) — You may object to the processing of
+                        your data at any time.</li>
+                    <li><strong>Withdrawal of consent</strong> (Art. 7(3) GDPR) — You may withdraw any
+                        consent given at any time with effect for the future.</li>
+                </ul>
+                <p>
+                    To exercise your rights, please contact me via email at:
+                    <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
+
+            <!-- 10. Right to Lodge a Complaint -->
+            <div class="legal-block">
+                <h2 class="legal-heading">10. Right to Lodge a Complaint with a Supervisory Authority</h2>
+                <p>
+                    If you believe that the processing of your personal data violates the GDPR, you have
+                    the right to lodge a complaint with a supervisory authority. The competent supervisory
+                    authority for Baden-Württemberg is:
+                </p>
+                <p>
+                    Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
+                    Lautenschlagerstraße 20<br>
+                    70173 Stuttgart<br>
+                    <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">
+                        www.baden-wuerttemberg.datenschutz.de
+                    </a>
+                </p>
+            </div>
+
         </div>
 
     </div>

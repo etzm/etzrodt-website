@@ -8,185 +8,276 @@ permalink: /impressum/
     <div class="container legal-container">
         <h1 class="section-title">Impressum</h1>
 
-        <p class="legal-subtitle">Angaben gemäß § 5 DDG</p>
-
-        <div class="legal-block">
-            <h2 class="legal-heading">Verantwortlich</h2>
-            <p>
-                Dr. Martin Etzrodt<br>
-                c/o Kinderabenteuerhof Freiburg e.V.<br>
-                Alfred-Döblin-Platz 1<br>
-                79100 Freiburg, Germany
-            </p>
+        <!-- Language Toggle -->
+        <div class="lang-toggle-wrapper">
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span class="lang-option active" data-lang="de">DE</span>
+                <span class="lang-separator">|</span>
+                <span class="lang-option" data-lang="en">EN</span>
+            </button>
         </div>
 
-        <div class="legal-block">
-            <h2 class="legal-heading">Kontakt</h2>
-            <p>
-                E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
-            </p>
-        </div>
+        <!-- ==================== GERMAN ==================== -->
+        <div class="legal-content active" data-lang="de">
 
-        <div class="legal-block">
-            <h2 class="legal-heading">Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV</h2>
-            <p>
-                Dr. Martin Etzrodt<br>
-                Anschrift wie oben
-            </p>
-        </div>
+            <p class="legal-subtitle">Angaben gemäß § 5 DDG</p>
 
-        <div class="legal-block">
-            <h2 class="legal-heading">Haftungsausschluss</h2>
-
-            <h3 class="legal-subheading">Haftung für Inhalte</h3>
-            <p>
-                Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, 
-                Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden. 
-                Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten 
-                nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als 
-                Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde 
-                Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige 
-                Tätigkeit hinweisen.
-            </p>
-
-            <h3 class="legal-subheading">Haftung für Links</h3>
-            <p>
-                Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen 
-                Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. 
-                Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber 
-                der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf 
-                mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der 
-                Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten 
-                ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei 
-                Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
-            </p>
-
-            <h3 class="legal-subheading">Urheberrecht</h3>
-            <p>
-                Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen 
-                dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art 
-                der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen 
-                Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind 
-                nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-            </p>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="legal-block" id="contact">
-            <h2 class="legal-heading">Kontaktformular</h2>
-            <p class="legal-form-intro">
-                Sie können mich auch über das folgende Formular kontaktieren. 
-                Ihre Nachricht wird per E-Mail an mich weitergeleitet.
-            </p>
-
-            <form
-                class="contact-form"
-                id="contact-form"
-            >
-                <div class="form-group">
-                    <label class="form-label" for="name">Name</label>
-                    <input
-                        class="form-input"
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        autocomplete="name"
-                        placeholder="Ihr Name"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="email">E-Mail</label>
-                    <input
-                        class="form-input"
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder="ihre@email.de"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="subject">Betreff</label>
-                    <input
-                        class="form-input"
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Worum geht es?"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="message">Nachricht</label>
-                    <textarea
-                        class="form-input form-textarea"
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        placeholder="Ihre Nachricht..."
-                    ></textarea>
-                </div>
-
-                <!-- Honeypot spam protection -->
-                <input type="text" name="_gotcha" style="display:none">
-
-                <p id="form-error" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
-
-                <button class="btn btn-primary form-submit" type="submit">
-                    Nachricht senden
-                </button>
-            </form>
-
-            <div id="form-success" style="display: none;">
-                <p style="color: var(--color-text); font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Vielen Dank!</p>
-                <p>Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich.</p>
+            <div class="legal-block">
+                <h2 class="legal-heading">Verantwortlich</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    c/o Kinderabenteuerhof Freiburg e.V.<br>
+                    Alfred-Döblin-Platz 1<br>
+                    79100 Freiburg, Germany
+                </p>
             </div>
 
-            <script>
-            (function () {
-                var WORKER_URL = "https://contact-form.etzrodt-martin.workers.dev";
-                var form = document.getElementById("contact-form");
-                var errorEl = document.getElementById("form-error");
-                var successEl = document.getElementById("form-success");
+            <div class="legal-block">
+                <h2 class="legal-heading">Kontakt</h2>
+                <p>
+                    E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
 
-                form.addEventListener("submit", function (e) {
-                    e.preventDefault();
-                    errorEl.style.display = "none";
-                    var btn = form.querySelector("button[type=submit]");
-                    btn.disabled = true;
-                    btn.textContent = "Wird gesendet\u2026";
+            <div class="legal-block">
+                <h2 class="legal-heading">Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    Anschrift wie oben
+                </p>
+            </div>
 
-                    fetch(WORKER_URL, {
-                        method: "POST",
-                        body: new FormData(form),
-                    })
-                        .then(function (res) { return res.json(); })
-                        .then(function (data) {
-                            if (data.success) {
-                                form.style.display = "none";
-                                successEl.style.display = "block";
-                            } else {
-                                errorEl.textContent = data.error || "Ein Fehler ist aufgetreten.";
-                                errorEl.style.display = "block";
-                                btn.disabled = false;
-                                btn.textContent = "Nachricht senden";
-                            }
-                        })
-                        .catch(function () {
-                            errorEl.textContent = "Verbindungsfehler. Bitte versuchen Sie es später.";
-                            errorEl.style.display = "block";
-                            btn.disabled = false;
-                            btn.textContent = "Nachricht senden";
-                        });
-                });
-            })();
-            </script>
+            <div class="legal-block">
+                <h2 class="legal-heading">Haftungsausschluss</h2>
+
+                <h3 class="legal-subheading">Haftung für Inhalte</h3>
+                <p>
+                    Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+                    Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+                    Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten
+                    nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als
+                    Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+                    Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+                    Tätigkeit hinweisen.
+                </p>
+
+                <h3 class="legal-subheading">Haftung für Links</h3>
+                <p>
+                    Diese Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen
+                    Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen.
+                    Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber
+                    der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf
+                    mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+                    Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten
+                    ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+                    Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+                </p>
+
+                <h3 class="legal-subheading">Urheberrecht</h3>
+                <p>
+                    Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+                    dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
+                    der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
+                    Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind
+                    nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+                </p>
+            </div>
+
+            <!-- German Contact Form -->
+            <div class="legal-block" id="contact">
+                <h2 class="legal-heading">Kontaktformular</h2>
+                <p class="legal-form-intro">
+                    Sie können mich auch über das folgende Formular kontaktieren.
+                    Ihre Nachricht wird per E-Mail an mich weitergeleitet.
+                </p>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name-de">Name</label>
+                        <input class="form-input" type="text" id="name-de" name="name" required autocomplete="name" placeholder="Ihr Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email-de">E-Mail</label>
+                        <input class="form-input" type="email" id="email-de" name="email" required autocomplete="email" placeholder="ihre@email.de">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject-de">Betreff</label>
+                        <input class="form-input" type="text" id="subject-de" name="subject" placeholder="Worum geht es?">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message-de">Nachricht</label>
+                        <textarea class="form-input form-textarea" id="message-de" name="message" rows="6" required placeholder="Ihre Nachricht..."></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <p id="form-error-de" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
+                    <button class="btn btn-primary form-submit" type="submit">Nachricht senden</button>
+                </form>
+                <div id="form-success-de" style="display: none;">
+                    <p style="color: var(--color-text); font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Vielen Dank!</p>
+                    <p>Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ==================== ENGLISH ==================== -->
+        <div class="legal-content" data-lang="en">
+
+            <p class="legal-subtitle">Information pursuant to § 5 DDG</p>
+
+            <div class="legal-block">
+                <h2 class="legal-heading">Responsible Person</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    c/o Kinderabenteuerhof Freiburg e.V.<br>
+                    Alfred-Döblin-Platz 1<br>
+                    79100 Freiburg, Germany
+                </p>
+            </div>
+
+            <div class="legal-block">
+                <h2 class="legal-heading">Contact</h2>
+                <p>
+                    Email: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
+                </p>
+            </div>
+
+            <div class="legal-block">
+                <h2 class="legal-heading">Editorially Responsible pursuant to § 18 (2) MStV</h2>
+                <p>
+                    Dr. Martin Etzrodt<br>
+                    Address as above
+                </p>
+            </div>
+
+            <div class="legal-block">
+                <h2 class="legal-heading">Disclaimer</h2>
+
+                <h3 class="legal-subheading">Liability for Content</h3>
+                <p>
+                    The contents of these pages have been created with the utmost care. However, no
+                    guarantee can be given for the accuracy, completeness, or timeliness of the content.
+                    As a service provider, I am responsible for my own content on these pages in accordance
+                    with § 7 (1) DDG under general law. According to §§ 8 to 10 DDG, however, I am not
+                    obligated as a service provider to monitor transmitted or stored third-party information
+                    or to investigate circumstances that indicate illegal activity.
+                </p>
+
+                <h3 class="legal-subheading">Liability for Links</h3>
+                <p>
+                    This website contains links to external third-party websites over whose content I have
+                    no influence. Therefore, I cannot accept any liability for this third-party content.
+                    The respective provider or operator of the linked pages is always responsible for their
+                    content. The linked pages were checked for possible legal violations at the time of
+                    linking. Illegal content was not apparent at the time of linking. Permanent content
+                    monitoring of the linked pages is not reasonable without concrete evidence of a legal
+                    violation. Upon becoming aware of legal violations, I will remove such links immediately.
+                </p>
+
+                <h3 class="legal-subheading">Copyright</h3>
+                <p>
+                    The content and works on these pages created by the site operator are subject to German
+                    copyright law. Reproduction, editing, distribution, and any kind of exploitation outside
+                    the limits of copyright law require the written consent of the respective author or
+                    creator. Downloads and copies of this page are only permitted for private,
+                    non-commercial use.
+                </p>
+            </div>
+
+            <!-- English Contact Form -->
+            <div class="legal-block" id="contact-en">
+                <h2 class="legal-heading">Contact Form</h2>
+                <p class="legal-form-intro">
+                    You can also contact me using the form below.
+                    Your message will be forwarded to me via email.
+                </p>
+
+                <form class="contact-form" id="contact-form-en">
+                    <div class="form-group">
+                        <label class="form-label" for="name-en">Name</label>
+                        <input class="form-input" type="text" id="name-en" name="name" required autocomplete="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email-en">Email</label>
+                        <input class="form-input" type="email" id="email-en" name="email" required autocomplete="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject-en">Subject</label>
+                        <input class="form-input" type="text" id="subject-en" name="subject" placeholder="What is it about?">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message-en">Message</label>
+                        <textarea class="form-input form-textarea" id="message-en" name="message" rows="6" required placeholder="Your message..."></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <p id="form-error-en" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
+                    <button class="btn btn-primary form-submit" type="submit">Send Message</button>
+                </form>
+                <div id="form-success-en" style="display: none;">
+                    <p style="color: var(--color-text); font-size: 1.1rem; margin-bottom: 8px; font-weight: 500;">Thank you!</p>
+                    <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </section>
+
+<script>
+(function () {
+    var WORKER_URL = "https://contact-form.etzrodt-martin.workers.dev";
+
+    function setupForm(formId, errorId, successId, messages) {
+        var form = document.getElementById(formId);
+        if (!form) return;
+        var errorEl = document.getElementById(errorId);
+        var successEl = document.getElementById(successId);
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            errorEl.style.display = "none";
+            var btn = form.querySelector("button[type=submit]");
+            btn.disabled = true;
+            btn.textContent = messages.sending;
+
+            fetch(WORKER_URL, {
+                method: "POST",
+                body: new FormData(form),
+            })
+                .then(function (res) { return res.json(); })
+                .then(function (data) {
+                    if (data.success) {
+                        form.style.display = "none";
+                        successEl.style.display = "block";
+                    } else {
+                        errorEl.textContent = data.error || messages.error;
+                        errorEl.style.display = "block";
+                        btn.disabled = false;
+                        btn.textContent = messages.submit;
+                    }
+                })
+                .catch(function () {
+                    errorEl.textContent = messages.connectionError;
+                    errorEl.style.display = "block";
+                    btn.disabled = false;
+                    btn.textContent = messages.submit;
+                });
+        });
+    }
+
+    setupForm("contact-form", "form-error-de", "form-success-de", {
+        sending: "Wird gesendet\u2026",
+        error: "Ein Fehler ist aufgetreten.",
+        connectionError: "Verbindungsfehler. Bitte versuchen Sie es sp\u00e4ter.",
+        submit: "Nachricht senden"
+    });
+
+    setupForm("contact-form-en", "form-error-en", "form-success-en", {
+        sending: "Sending\u2026",
+        error: "An error occurred.",
+        connectionError: "Connection error. Please try again later.",
+        submit: "Send Message"
+    });
+})();
+</script>

@@ -94,3 +94,35 @@ themeToggle.addEventListener('click', () => {
     const current = root.getAttribute('data-theme');
     setTheme(current === 'dark' ? 'light' : 'dark');
 });
+
+// Language toggle for legal pages
+(function () {
+    var toggle = document.getElementById('langToggle');
+    if (!toggle) return;
+
+    var STORAGE_KEY = 'legal-lang';
+    var defaultLang = 'de';
+
+    function setLang(lang) {
+        document.querySelectorAll('.legal-content[data-lang]').forEach(function (el) {
+            el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+        });
+        toggle.querySelectorAll('.lang-option').forEach(function (opt) {
+            opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+        });
+        localStorage.setItem(STORAGE_KEY, lang);
+    }
+
+    var saved = localStorage.getItem(STORAGE_KEY);
+    setLang(saved || defaultLang);
+
+    toggle.addEventListener('click', function (e) {
+        var target = e.target;
+        if (target.classList.contains('lang-option')) {
+            setLang(target.getAttribute('data-lang'));
+        } else {
+            var current = localStorage.getItem(STORAGE_KEY) || defaultLang;
+            setLang(current === 'de' ? 'en' : 'de');
+        }
+    });
+})();
