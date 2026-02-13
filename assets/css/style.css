@@ -477,6 +477,55 @@ ul {
     font-weight: 600;
 }
 
+/* ===== Active Roles ===== */
+.roles-label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.roles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 48px;
+}
+
+.role-since {
+    font-family: "DM Mono", monospace;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.role-title {
+    font-family: "Newsreader", Georgia, serif;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 4px;
+}
+
+.role-org {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.role-focus {
+    font-size: 0.78rem;
+    color: var(--color-text-light);
+    opacity: 0.65;
+    line-height: 1.55;
+}
+
 /* ===== Experience / Timeline ===== */
 .timeline {
     max-width: 700px;
@@ -899,6 +948,11 @@ ul {
     .dropdown-item {
         padding: 10px 24px;
         font-size: 0.85rem;
+    }
+
+    .roles-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .hero h1 {

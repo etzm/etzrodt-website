@@ -1,21 +1,13 @@
-<section class="section section-alt" id="experience">
+<section class="section" id="experience">
     <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            {% for item in site.data.experience limit:2 %}
-            <div class="timeline-item">
-                <div class="timeline-date">{{ item.date }}</div>
-                <div class="timeline-content">
-                    <h3>{{ item.title }}</h3>
-                    <p class="timeline-company">{{ item.company }}</p>
-                    {% if item.details %}
-                    <ul>
-                        {% for detail in item.details %}
-                        <li>{{ detail }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
+        <p class="roles-label">Active Roles</p>
+        <div class="roles-grid">
+            {% for role in site.data.roles %}
+            <div class="role-card">
+                <div class="role-since" style="color: {{ role.color }};">{{ role.since }} — present</div>
+                <h3 class="role-title">{{ role.title }}</h3>
+                <p class="role-org">{{ role.org }}</p>
+                <p class="role-focus">{{ role.focus }}</p>
             </div>
             {% endfor %}
         </div>
