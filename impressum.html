@@ -26,7 +26,6 @@ permalink: /impressum/
                 <h2 class="legal-heading">Verantwortlich</h2>
                 <p>
                     Dr. Martin Etzrodt<br>
-                    c/o Kinderabenteuerhof Freiburg e.V.<br>
                     Alfred-Döblin-Platz 1<br>
                     79100 Freiburg, Germany
                 </p>
@@ -109,6 +108,12 @@ permalink: /impressum/
                         <textarea class="form-input form-textarea" id="message-de" name="message" rows="6" required placeholder="Ihre Nachricht..."></textarea>
                     </div>
                     <input type="text" name="_gotcha" style="display:none">
+                    <div class="form-consent">
+                        <label class="form-consent-label">
+                            <input type="checkbox" id="consent-de" required>
+                            <span>Ich habe die <a href="{{ '/datenschutz/' | relative_url }}" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. Meine Daten werden über Cloudflare Workers und Brevo (Sendinblue GmbH, Berlin) verarbeitet.</span>
+                        </label>
+                    </div>
                     <p id="form-error-de" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
                     <button class="btn btn-primary form-submit" type="submit">Nachricht senden</button>
                 </form>
@@ -129,7 +134,6 @@ permalink: /impressum/
                 <h2 class="legal-heading">Responsible Person</h2>
                 <p>
                     Dr. Martin Etzrodt<br>
-                    c/o Kinderabenteuerhof Freiburg e.V.<br>
                     Alfred-Döblin-Platz 1<br>
                     79100 Freiburg, Germany
                 </p>
@@ -210,6 +214,12 @@ permalink: /impressum/
                         <textarea class="form-input form-textarea" id="message-en" name="message" rows="6" required placeholder="Your message..."></textarea>
                     </div>
                     <input type="text" name="_gotcha" style="display:none">
+                    <div class="form-consent">
+                        <label class="form-consent-label">
+                            <input type="checkbox" id="consent-en" required>
+                            <span>I have read the <a href="{{ '/datenschutz/' | relative_url }}" target="_blank" rel="noopener">Privacy Policy</a> and consent to the processing of my data to handle my enquiry. My data will be processed via Cloudflare Workers and Brevo (Sendinblue GmbH, Berlin).</span>
+                        </label>
+                    </div>
                     <p id="form-error-en" style="color: var(--color-accent); display: none; margin-bottom: 12px;"></p>
                     <button class="btn btn-primary form-submit" type="submit">Send Message</button>
                 </form>

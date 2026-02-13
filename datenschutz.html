@@ -27,7 +27,6 @@ permalink: /datenschutz/
                 <h2 class="legal-heading">1. Verantwortlicher</h2>
                 <p>
                     Dr. Martin Etzrodt<br>
-                    c/o Kinderabenteuerhof Freiburg e.V.<br>
                     Alfred-Döblin-Platz 1<br>
                     79100 Freiburg, Germany<br>
                     E-Mail: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
@@ -101,37 +100,29 @@ permalink: /datenschutz/
                     Wirkung für die Zukunft widerrufen.
                 </p>
 
-                <h3 class="legal-subheading">Cloudflare Workers</h3>
+                <h3 class="legal-subheading">Datenfluss und Auftragsverarbeiter</h3>
                 <p>
-                    Das Kontaktformular wird über einen <strong>Cloudflare Worker</strong> verarbeitet,
-                    einen serverlosen Dienst der Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
-                    Die Verarbeitung Ihrer Formulardaten erfolgt auf europäischen Cloudflare-Servern.
-                    Cloudflare ist unter dem EU-US Data Privacy Framework zertifiziert.
+                    Bei Absenden des Formulars werden Ihre Daten in folgendem Ablauf verarbeitet:
                 </p>
+                <ul>
+                    <li>Ihre Formulardaten werden zunächst an einen <strong>Cloudflare Worker</strong>
+                        übermittelt, einen serverlosen Dienst der Cloudflare Inc., 101 Townsend St,
+                        San Francisco, CA 94107, USA. Der Cloudflare Worker fungiert als Vermittler
+                        (Auftragsverarbeiter) und speichert Ihre Daten nicht dauerhaft. Die Verarbeitung
+                        erfolgt auf europäischen Cloudflare-Servern. Cloudflare ist unter dem EU-US Data
+                        Privacy Framework zertifiziert.</li>
+                    <li>Der Cloudflare Worker leitet Ihre Daten an den E-Mail-Dienst <strong>Brevo</strong>
+                        (ehemals Sendinblue) weiter. Anbieter ist die Sendinblue GmbH, Köpenicker Str. 126,
+                        10179 Berlin, Deutschland. Brevo verarbeitet die Daten ausschließlich zum Zweck
+                        der E-Mail-Zustellung an den Seitenbetreiber. Die Daten werden auf Servern in der
+                        Europäischen Union verarbeitet. Mit Brevo wurde ein Auftragsverarbeitungsvertrag
+                        (AVV) gemäß Art. 28 DSGVO abgeschlossen.</li>
+                    <li>Die Nachricht wird per E-Mail an den Seitenbetreiber zugestellt.</li>
+                </ul>
                 <p>
                     Weitere Informationen:
-                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
-                        Cloudflare Privacy Policy
-                    </a>
-                </p>
-
-                <h3 class="legal-subheading">Brevo (E-Mail-Versand)</h3>
-                <p>
-                    Zum Versand der Kontaktformular-Nachrichten wird der Dienst <strong>Brevo</strong>
-                    (ehemals Sendinblue) genutzt. Anbieter ist die Sendinblue GmbH, Köpenicker Str. 126,
-                    10179 Berlin, Deutschland.
-                </p>
-                <p>
-                    Brevo verarbeitet die im Formular eingegebenen Daten (Name, E-Mail-Adresse, Nachricht)
-                    ausschließlich zum Zweck der E-Mail-Zustellung an den Seitenbetreiber. Die Daten werden
-                    auf Servern in der Europäischen Union verarbeitet. Mit Brevo wurde ein
-                    Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen.
-                </p>
-                <p>
-                    Weitere Informationen:
-                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">
-                        Brevo Datenschutzerklärung
-                    </a>
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>,
+                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">Brevo Datenschutzerklärung</a>
                 </p>
             </div>
 
@@ -140,13 +131,14 @@ permalink: /datenschutz/
                 <h2 class="legal-heading">5. Webanalyse (GoatCounter)</h2>
                 <p>
                     Diese Website nutzt <strong>GoatCounter</strong>, einen datenschutzfreundlichen
-                    Open-Source-Webanalysedienst. GoatCounter erhebt <strong>keine personenbezogenen Daten</strong>
-                    und setzt <strong>keine Cookies</strong>.
+                    Open-Source-Webanalysedienst. GoatCounter setzt <strong>keine Cookies</strong> und
+                    erhebt nur <strong>minimale Daten</strong>.
                 </p>
                 <p>
-                    Erfasst werden ausschließlich anonymisierte, aggregierte Daten wie Seitenaufrufe,
-                    Referrer und ungefähre Standortdaten (auf Landesebene). Eine Identifizierung einzelner
-                    Besucher ist nicht möglich.
+                    Erfasst werden aggregierte Daten wie Seitenaufrufe, Referrer und ungefähre
+                    Standortdaten (auf Landesebene, abgeleitet aus der IP-Adresse). Die IP-Adresse
+                    wird dabei nicht gespeichert. Eine Identifizierung einzelner Besucher ist nicht möglich.
+                    Das Analyseskript wird von einem externen Server (gc.zgo.at) geladen.
                 </p>
                 <p>
                     Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
@@ -175,10 +167,26 @@ permalink: /datenschutz/
 
             <!-- 7. Keine Cookies -->
             <div class="legal-block">
-                <h2 class="legal-heading">7. Cookies</h2>
+                <h2 class="legal-heading">7. Cookies und lokale Speicherung</h2>
                 <p>
                     Diese Website verwendet <strong>keine Cookies</strong>. Es werden weder eigene noch
                     Cookies von Drittanbietern gesetzt.
+                </p>
+                <p>
+                    Zur Verbesserung der Benutzerfreundlichkeit verwendet diese Website jedoch
+                    <strong>localStorage</strong>, eine clientseitige Speichertechnologie Ihres Browsers.
+                    Dabei werden folgende Einstellungen lokal auf Ihrem Gerät gespeichert:
+                </p>
+                <ul>
+                    <li><strong>theme</strong> — Ihre bevorzugte Farbdarstellung (hell/dunkel)</li>
+                    <li><strong>legal-lang</strong> — Ihre bevorzugte Sprache für die Rechtstexte (DE/EN)</li>
+                </ul>
+                <p>
+                    Diese Daten werden <strong>nicht</strong> an einen Server übermittelt und verbleiben
+                    ausschließlich auf Ihrem Gerät. Sie können die gespeicherten Daten jederzeit über
+                    die Browsereinstellungen löschen. Die Verarbeitung erfolgt auf Grundlage von
+                    Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer benutzerfreundlichen
+                    Darstellung der Website).
                 </p>
             </div>
 
@@ -250,7 +258,6 @@ permalink: /datenschutz/
                 <h2 class="legal-heading">1. Controller</h2>
                 <p>
                     Dr. Martin Etzrodt<br>
-                    c/o Kinderabenteuerhof Freiburg e.V.<br>
                     Alfred-Döblin-Platz 1<br>
                     79100 Freiburg, Germany<br>
                     Email: <a href="mailto:etzrodt.martin@protonmail.com">etzrodt.martin@protonmail.com</a>
@@ -323,36 +330,29 @@ permalink: /datenschutz/
                     effect for the future.
                 </p>
 
-                <h3 class="legal-subheading">Cloudflare Workers</h3>
+                <h3 class="legal-subheading">Data Flow and Processors</h3>
                 <p>
-                    The contact form is processed via a <strong>Cloudflare Worker</strong>, a serverless
-                    service provided by Cloudflare Inc., 101 Townsend St, San Francisco, CA 94107, USA.
-                    Your form data is processed on European Cloudflare servers. Cloudflare is certified
-                    under the EU-US Data Privacy Framework.
+                    When you submit the form, your data is processed as follows:
                 </p>
+                <ul>
+                    <li>Your form data is first transmitted to a <strong>Cloudflare Worker</strong>,
+                        a serverless service provided by Cloudflare Inc., 101 Townsend St,
+                        San Francisco, CA 94107, USA. The Cloudflare Worker acts as an intermediary
+                        processor and does not permanently store your data. Processing takes place
+                        on European Cloudflare servers. Cloudflare is certified under the EU-US Data
+                        Privacy Framework.</li>
+                    <li>The Cloudflare Worker forwards your data to the email service <strong>Brevo</strong>
+                        (formerly Sendinblue). The provider is Sendinblue GmbH, Köpenicker Str. 126,
+                        10179 Berlin, Germany. Brevo processes the data solely for the purpose of
+                        delivering the email to the site operator. The data is processed on servers
+                        within the European Union. A data processing agreement (DPA) pursuant to
+                        Art. 28 GDPR has been concluded with Brevo.</li>
+                    <li>The message is delivered via email to the site operator.</li>
+                </ul>
                 <p>
                     Further information:
-                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">
-                        Cloudflare Privacy Policy
-                    </a>
-                </p>
-
-                <h3 class="legal-subheading">Brevo (Email Delivery)</h3>
-                <p>
-                    The service <strong>Brevo</strong> (formerly Sendinblue) is used to deliver contact
-                    form messages. The provider is Sendinblue GmbH, Köpenicker Str. 126, 10179 Berlin, Germany.
-                </p>
-                <p>
-                    Brevo processes the data entered in the form (name, email address, message) solely
-                    for the purpose of delivering the email to the site operator. The data is processed
-                    on servers within the European Union. A data processing agreement (DPA) pursuant to
-                    Art. 28 GDPR has been concluded with Brevo.
-                </p>
-                <p>
-                    Further information:
-                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">
-                        Brevo Privacy Policy
-                    </a>
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a>,
+                    <a href="https://www.brevo.com/legal/privacypolicy/" target="_blank" rel="noopener">Brevo Privacy Policy</a>
                 </p>
             </div>
 
@@ -361,13 +361,14 @@ permalink: /datenschutz/
                 <h2 class="legal-heading">5. Web Analytics (GoatCounter)</h2>
                 <p>
                     This website uses <strong>GoatCounter</strong>, a privacy-friendly open-source web
-                    analytics service. GoatCounter collects <strong>no personal data</strong> and sets
-                    <strong>no cookies</strong>.
+                    analytics service. GoatCounter sets <strong>no cookies</strong> and collects only
+                    <strong>minimal data</strong>.
                 </p>
                 <p>
-                    Only anonymised, aggregated data such as page views, referrers, and approximate
-                    location data (country level) is collected. Identifying individual visitors is
-                    not possible.
+                    Only aggregated data such as page views, referrers, and approximate location data
+                    (country level, derived from the IP address) is collected. The IP address itself
+                    is not stored. Identifying individual visitors is not possible. The analytics
+                    script is loaded from an external server (gc.zgo.at).
                 </p>
                 <p>
                     Processing is carried out on the basis of Art. 6(1)(f) GDPR (legitimate interest in
@@ -392,12 +393,27 @@ permalink: /datenschutz/
                 </p>
             </div>
 
-            <!-- 7. Cookies -->
+            <!-- 7. Cookies & Local Storage -->
             <div class="legal-block">
-                <h2 class="legal-heading">7. Cookies</h2>
+                <h2 class="legal-heading">7. Cookies and Local Storage</h2>
                 <p>
                     This website uses <strong>no cookies</strong>. Neither first-party nor third-party
                     cookies are set.
+                </p>
+                <p>
+                    To improve usability, this website uses <strong>localStorage</strong>, a client-side
+                    storage technology in your browser. The following preferences are stored locally
+                    on your device:
+                </p>
+                <ul>
+                    <li><strong>theme</strong> — your preferred colour scheme (light/dark)</li>
+                    <li><strong>legal-lang</strong> — your preferred language for legal pages (DE/EN)</li>
+                </ul>
+                <p>
+                    This data is <strong>not</strong> transmitted to any server and remains exclusively
+                    on your device. You can delete the stored data at any time via your browser settings.
+                    Processing is carried out on the basis of Art. 6(1)(f) GDPR (legitimate interest in
+                    a user-friendly presentation of the website).
                 </p>
             </div>
 
