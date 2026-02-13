@@ -2,7 +2,7 @@
     <div class="container">
         <div class="about-content">
             <div class="about-photo">
-                <img src="{{ site.about.photo | relative_url }}" alt="{{ site.author.name }}" class="photo-img">
+                <img src="{{ site.about.photo | relative_url }}" alt="{{ site.author.name }}" class="photo-img" loading="lazy">
             </div>
             <div class="about-text">
                 {% for paragraph in site.about.paragraphs %}

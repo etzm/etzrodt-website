@@ -10,7 +10,7 @@ permalink: /projects/
         <div class="projects-grid">
             {% for project in site.data.projects %}
             <div class="card">
-                <h3 class="card-title">{{ project.title }}</h3>
+                <h2 class="card-title">{{ project.title }}</h2>
                 <p class="card-description">{{ project.description }}</p>
                 <div class="card-tags">
                     {% for tag in project.tags %}

@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Martin Etzrodt",
+    "url": "{{ site.url }}",
+    "image": "{{ '/assets/images/Martin_2024.jpeg' | absolute_url }}",
+    "jobTitle": "Scientist & Web3 Researcher",
+    "description": "{{ site.description }}",
+    "alumniOf": [
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "Université de Lausanne"
+        },
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "Harvard University"
+        },
+        {
+            "@type": "CollegeOrUniversity",
+            "name": "ETH Zürich"
+        }
+    ],
+    "worksFor": {
+        "@type": "Organization",
+        "name": "AKASHA Foundation"
+    },
+    "sameAs": [
+        {% for link in site.data.social %}"{{ link.url }}"{% unless forloop.last %},
+        {% endunless %}{% endfor %}
+    ]
+}
+</script>

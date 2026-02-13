@@ -40,7 +40,11 @@ exclude:
   - .DS_Store
   - vendor
   - .claude
+  - contact-worker
+  - files
+  - files.zip
 
 # Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap

@@ -10,7 +10,7 @@ permalink: /skills/
         <div class="skills-grid">
             {% for group in site.data.skills %}
             <div class="skill-group">
-                <h3>{{ group.name }}</h3>
+                <h2 class="skill-group-title">{{ group.name }}</h2>
                 <div class="skill-tags">
                     {% for skill in group.items %}
                     <span class="tag">{{ skill }}</span>
