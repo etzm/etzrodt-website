@@ -1,0 +1,27 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery/
+---
+
+<section class="section" id="gallery-page">
+    <div class="container">
+        <h1 class="section-title">Gallery</h1>
+        {% if site.data.gallery and site.data.gallery.size > 0 %}
+        <div class="gallery-grid">
+            {% for item in site.data.gallery %}
+            <div class="gallery-item">
+                <img src="{{ '/assets/images/gallery/' | append: item.image | relative_url }}" alt="{{ item.caption }}" class="gallery-img" loading="lazy">
+                {% if item.caption %}
+                <div class="gallery-caption">
+                    <p>{{ item.caption }}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="gallery-empty">Photos coming soon.</p>
+        {% endif %}
+    </div>
+</section>

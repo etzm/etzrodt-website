@@ -1,0 +1,11 @@
+# Add your photos here. Place image files in /assets/images/gallery/
+# Each entry needs: image (filename) and optionally caption and category.
+#
+# Example:
+# - image: "hiking-alps.jpg"
+#   caption: "Hiking in the Swiss Alps"
+#   category: "Travel"
+#
+# - image: "conference-talk.jpg"
+#   caption: "Speaking at DeSci Berlin 2024"
+#   category: "Events"
