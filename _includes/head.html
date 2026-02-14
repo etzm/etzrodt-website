@@ -1,6 +1,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://martinetzrodt.goatcounter.com https://contact-form.etzrodt-martin.workers.dev; frame-ancestors 'none';">
 <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 {% seo %}
 <meta property="og:image" content="{{ '/assets/images/Martin_2024.jpeg' | absolute_url }}">
@@ -8,10 +10,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="dns-prefetch" href="https://gc.zgo.at">
+<link rel="preconnect" href="https://gc.zgo.at" crossorigin>
 <script>(function(){var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);})()</script>
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/legal.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/brands.min.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/solid.min.css' | relative_url }}">
-<script data-goatcounter="https://martinetzrodt.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://martinetzrodt.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<noscript><style>.theme-toggle,.lang-toggle{display:none !important;}</style></noscript>
