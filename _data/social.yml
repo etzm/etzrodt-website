@@ -17,3 +17,8 @@
 - label: "Instagram"
   url: "https://www.instagram.com/etzromar"
   icon: "fa-brands fa-instagram"
+
+- label: "Telegram"
+  url: "https://t.me/etzmail"
+  icon: "fa-brands fa-telegram"
+  qr: true

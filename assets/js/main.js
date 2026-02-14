@@ -113,6 +113,27 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
+// QR code modal
+(function () {
+    var modal = document.getElementById('qrModal');
+    if (!modal) return;
+    var closeBtn = modal.querySelector('.qr-modal-close');
+
+    function openModal() { modal.classList.add('active'); }
+    function closeModal() { modal.classList.remove('active'); }
+
+    document.querySelectorAll('.qr-trigger').forEach(function (btn) {
+        btn.addEventListener('click', openModal);
+    });
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+})();
+
 // Language toggle for legal pages
 (function () {
     var toggle = document.getElementById('langToggle');

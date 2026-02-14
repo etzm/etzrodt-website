@@ -4,9 +4,15 @@
         <p class="contact-text">{{ site.contact.text }}</p>
         <div class="contact-icons">
             {% for link in site.data.social %}
+            {% if link.qr %}
+            <button class="contact-icon qr-trigger" data-qr="{{ link.label | downcase }}" title="{{ link.label }}" aria-label="{{ link.label }}">
+                <i class="{{ link.icon }}"></i>
+            </button>
+            {% else %}
             <a href="{{ link.url }}" class="contact-icon" target="_blank" rel="noopener" title="{{ link.label }}">
                 <i class="{{ link.icon }}"></i>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
