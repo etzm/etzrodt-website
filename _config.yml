@@ -41,6 +41,7 @@ exclude:
   - vendor
   - .claude
   - contact-worker
+  - gallery-admin-worker
   - files
   - files.zip
 

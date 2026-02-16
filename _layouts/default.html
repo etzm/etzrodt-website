@@ -14,5 +14,6 @@
     {% include footer.html %}
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% if page.admin_js %}<script src="{{ '/assets/js/admin.js' | relative_url }}"></script>{% endif %}
 </body>
 </html>

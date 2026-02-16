@@ -1,0 +1,85 @@
+---
+layout: default
+title: Admin
+permalink: /admin/
+sitemap: false
+admin_js: true
+---
+
+<section class="section" id="admin-page">
+    <div class="container">
+
+        <!-- LOGIN STATE -->
+        <div id="admin-login" class="admin-login">
+            <h1 class="section-title">Admin</h1>
+            <form id="loginForm" class="admin-login-form" autocomplete="off">
+                <input type="password" id="adminPassword" placeholder="Password" class="admin-input" autocomplete="current-password" required>
+                <button type="submit" class="btn btn-primary admin-login-btn">Sign In</button>
+            </form>
+            <p id="loginError" class="admin-error" hidden></p>
+        </div>
+
+        <!-- AUTHENTICATED STATE -->
+        <div id="admin-panel" class="admin-panel" hidden>
+            <div class="admin-header">
+                <h1 class="section-title">Gallery Manager</h1>
+                <button id="logoutBtn" class="btn btn-outline admin-logout">Sign Out</button>
+            </div>
+
+            <!-- Tab navigation -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="upload">Upload</button>
+                <button class="admin-tab" data-tab="manage">Manage Gallery</button>
+            </div>
+
+            <!-- UPLOAD TAB -->
+            <div id="tab-upload" class="admin-tab-content active">
+                <div class="admin-dropzone" id="dropzone">
+                    <p class="admin-dropzone-text">Drag &amp; drop images here, or click to select</p>
+                    <p class="admin-dropzone-hint">JPEG, PNG, WebP &middot; max 10 MB</p>
+                    <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" multiple hidden>
+                </div>
+                <div id="uploadQueue" class="admin-upload-queue"></div>
+            </div>
+
+            <!-- MANAGE TAB -->
+            <div id="tab-manage" class="admin-tab-content">
+                <div id="galleryLoading" class="admin-loading">Loading gallery data&hellip;</div>
+
+                <!-- Assigned gallery items -->
+                <div id="galleryEditor" class="admin-gallery-editor"></div>
+
+                <!-- Unassigned images -->
+                <div id="unassignedSection" class="admin-unassigned-section" hidden>
+                    <h3 class="admin-subtitle">Unassigned Images</h3>
+                    <p class="admin-hint">These images are uploaded but not yet added to the gallery.</p>
+                    <div id="unassignedList" class="admin-unassigned-list"></div>
+                </div>
+
+                <!-- Empty state -->
+                <div id="galleryEmpty" class="admin-empty" hidden>
+                    <p>No gallery items yet. Upload images first, then add them here.</p>
+                </div>
+
+                <!-- Actions -->
+                <div id="galleryActions" class="admin-actions" hidden>
+                    <button id="previewBtn" class="btn btn-outline">Preview</button>
+                    <button id="saveBtn" class="btn btn-primary">Publish Changes</button>
+                </div>
+            </div>
+
+            <!-- PREVIEW MODAL -->
+            <div id="previewModal" class="admin-preview-modal" hidden>
+                <div class="admin-preview-header">
+                    <h2>Gallery Preview</h2>
+                    <button id="closePreviewBtn" class="admin-preview-close">&times;</button>
+                </div>
+                <div id="previewContent" class="admin-preview-content"></div>
+            </div>
+        </div>
+
+        <!-- TOAST -->
+        <div id="adminToast" class="admin-toast" hidden></div>
+
+    </div>
+</section>

@@ -1,0 +1,19 @@
+name = "gallery-admin"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://martinetzrodt.com"
+GITHUB_REPO = "etzm/etzm.github.io"
+GITHUB_BRANCH = "main"
+
+# Secrets (set via `wrangler secret put`):
+# ADMIN_PASSWORD_HASH  — PBKDF2 derived key (hex) of the admin password
+# ADMIN_PASSWORD_SALT  — random salt used for PBKDF2 (hex)
+# GITHUB_TOKEN         — fine-grained PAT with Contents read/write on this repo
+# JWT_SECRET           — random 256-bit key (hex)
+
+# KV namespace for rate limiting (create with: wrangler kv namespace create "RATE_LIMIT")
+ [[kv_namespaces]]
+ binding = "RATE_LIMIT"
+ id = "46873f2b949248698c4474399fa4daed"
