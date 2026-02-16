@@ -4,7 +4,7 @@ compatibility_date = "2024-01-01"
 
 [vars]
 ALLOWED_ORIGIN = "https://martinetzrodt.com"
-GITHUB_REPO = "etzm/etzm.github.io"
+GITHUB_REPO = "etzm/etzrodt-website"
 GITHUB_BRANCH = "main"
 
 # Secrets (set via `wrangler secret put`):
