@@ -2,7 +2,10 @@
     <div class="container">
         <div class="about-content">
             <div class="about-photo">
-                <img src="{{ site.about.photo | relative_url }}" alt="{{ site.author.name }}" class="photo-img" loading="lazy">
+                <picture>
+                    <source srcset="{{ '/assets/images/Martin_2024.webp' | relative_url }}" type="image/webp">
+                    <img src="{{ site.about.photo | relative_url }}" alt="{{ site.author.name }}" class="photo-img" loading="lazy" width="232" height="232">
+                </picture>
             </div>
             <div class="about-text">
                 {% for paragraph in site.about.paragraphs %}
