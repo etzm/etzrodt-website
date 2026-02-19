@@ -27,6 +27,7 @@ if (dropdownTrigger) {
         if (window.innerWidth <= 768) {
             e.preventDefault();
             navDropdown.classList.toggle('open');
+            dropdownTrigger.setAttribute('aria-expanded', navDropdown.classList.contains('open'));
         }
     });
 }
