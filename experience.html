@@ -2,14 +2,50 @@
 layout: default
 title: Experience
 permalink: /experience/
-last_modified_at: 2026-02-14
+last_modified_at: 2026-03-22
 ---
 
 <section class="section" id="experience-page">
     <div class="container">
         <h1 class="section-title">Experience</h1>
+
+        <h2 class="experience-heading">Active Occupations</h2>
+        <div class="occupations-list">
+            {% for item in site.data.experience.active %}
+            <div class="occupation-item">
+                <h3 class="occupation-title">{{ item.title }}</h3>
+                <p class="occupation-company">{{ item.company }}</p>
+                {% if item.details %}
+                <ul>
+                    {% for detail in item.details %}
+                    <li>{{ detail }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="experience-heading">Previous Occupations</h2>
+        <div class="occupations-list">
+            {% for item in site.data.experience.previous %}
+            <div class="occupation-item">
+                <h3 class="occupation-title">{{ item.title }}</h3>
+                <p class="occupation-company">{{ item.company }}</p>
+                {% if item.details %}
+                <ul>
+                    {% for detail in item.details %}
+                    <li>{{ detail }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <h2 class="experience-heading">Education</h2>
         <div class="timeline">
-            {% for item in site.data.experience %}
+            {% for item in site.data.experience.timeline %}
             <div class="timeline-item">
                 <div class="timeline-date">{{ item.date }}</div>
                 <div class="timeline-content">
