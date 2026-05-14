@@ -1,5 +1,10 @@
 # Active occupations (running to present)
 active:
+  - title: "Founding Director"
+    company: "Open Science Institute, Interlaken, Switzerland"
+    details:
+      - 'Advancing the <a href="https://opening.science/">Open Science Foundation''s mission</a> through research, development and open scientific infrastructure'
+
   - title: "Board Member"
     company: "ISCC Foundation"
     details:
@@ -10,15 +15,15 @@ active:
     details:
       - "Member of the board"
 
+# Previous occupations (post-PhD, no longer active)
+previous:
   - title: "Principal Researcher"
     company: "AKASHA Foundation, Zug, Switzerland"
     details:
-      - "Working with the co-founder of the Ethereum blockchain on Web3.0 technologies"
-      - "Developing economic models for scientific communication, attribution and funding"
-      - "Spearheading the Blockchain for Science initiative"
+      - "Worked with the co-founder of the Ethereum blockchain on Web3.0 technologies"
+      - "Developed economic models for scientific communication, attribution and funding"
+      - "Spearheaded the Blockchain for Science initiative"
 
-# Previous occupations (post-PhD, no longer active)
-previous:
   - title: "Head of Research"
     company: "Validity Labs AG, Zug, Switzerland"
     details:
