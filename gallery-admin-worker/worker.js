@@ -257,7 +257,11 @@ async function getGallery(env) {
   }
 
   const data = await res.json();
-  const content = atob(data.content.replace(/\n/g, ''));
+  // Decode base64 → binary → UTF-8 to handle non-ASCII characters (ä, ö, ü, etc.)
+  const binary = atob(data.content.replace(/\n/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  const content = new TextDecoder().decode(bytes);
 
   // Parse simple YAML (array of objects with image, caption, category)
   const entries = parseSimpleYaml(content);
@@ -282,9 +286,15 @@ async function updateGallery(request, env) {
     }
   }
 
+  // Use TextEncoder to handle UTF-8 characters (e.g. ä, ö, ü) before base64 encoding
+  const utf8Bytes = new TextEncoder().encode(content);
+  let binary = '';
+  for (const byte of utf8Bytes) binary += String.fromCharCode(byte);
+  const base64Content = btoa(binary);
+
   const body = {
     message: 'Update gallery data',
-    content: btoa(content),
+    content: base64Content,
     branch: env.GITHUB_BRANCH,
   };
   if (currentSha) body.sha = currentSha;
