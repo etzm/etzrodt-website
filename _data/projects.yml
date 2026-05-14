@@ -1,3 +1,12 @@
+- title: "Open Science Institute"
+  description: "Open Science Foundation institute based in Interlaken, advancing the mission to make scientific research open, collaborative, and accessible through research, development, and open scientific infrastructure."
+  tags:
+    - "Open Science"
+    - "Research Infrastructure"
+    - "Foundation"
+  url: "https://opening.science/"
+  link_text: "Visit Site"
+
 - title: "Blockchain for Science"
   description: "A think-tank exploring how blockchain and Web3 technologies can address the reproducibility crisis and improve scientific communication, collaboration, and incentive structures."
   tags:

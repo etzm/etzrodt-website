@@ -1,17 +1,17 @@
 # Active occupations (running to present)
 active:
   - title: "Founding Director"
-    company: "Open Science Institute, Interlaken, Switzerland"
+    company: '<a href="https://opening.science/">Open Science Institute</a>, Interlaken, Switzerland'
     details:
       - 'Advancing the <a href="https://opening.science/">Open Science Foundation''s mission</a> through research, development and open scientific infrastructure'
 
   - title: "Board Member"
-    company: "ISCC Foundation"
+    company: '<a href="https://iscc.io/">ISCC Foundation</a>'
     details:
       - "Member of the foundation board"
 
   - title: "Board Member"
-    company: "Kinderabenteuerhof Freiburg e.V."
+    company: '<a href="https://kinderabenteuerhof.de/">Kinderabenteuerhof Freiburg e.V.</a>'
     details:
       - "Member of the board"
 
